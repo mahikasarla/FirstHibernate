@@ -11,6 +11,7 @@ public class Employee {
 	int id;
 	String firstName,lastName,mailId;
 	long phoneNo;
+	// Primary Key
 	@Id
 	public int getId() {
 		return id;
@@ -18,6 +19,7 @@ public class Employee {
 	public void setId(int id) {
 		this.id = id;
 	}
+	// Column Header
 	@Column (name="First")
 	public String getFirstName() {
 		return firstName;
@@ -25,10 +27,13 @@ public class Employee {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
+	// Column Header
 	@Column (name="Last")
 	public String getLastName() {
 		return lastName;
 	}
+	
+	// Column Header
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
