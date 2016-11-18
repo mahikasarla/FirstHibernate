@@ -25,14 +25,16 @@ public class DataSource {
 		e.setId(1);
 		e.setMailId("mahi.kasarla09@gmail.com");
 		e.setPhoneNo(967637803);
-		
-		e.setFirstName("Naveen");
-		e.setLastName("Matta");
-		e.setId(2);
-		e.setMailId("matta09@gmail.com");
-		e.setPhoneNo(603227803);
-		
+		Employee e1= new Employee();
+		e1.setFirstName("Naveen");
+		e1.setLastName("Matta");
+		e1.setId(2);
+		e1.setMailId("matta09@gmail.com");
+		e1.setPhoneNo(603227803);
+		// persist data
 		session.persist(e);
+		//session.save(e1);
+		session.persist(e1);
 		t.commit();
 		session.close();
 		System.out.println("Database Updated succesfully");

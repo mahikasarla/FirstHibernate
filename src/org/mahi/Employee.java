@@ -3,8 +3,10 @@ package org.mahi;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-	@Entity (name="dbEmp")
+	@Entity 
+	@Table(name="emp")
 public class Employee {
 	
 	
